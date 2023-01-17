@@ -1,4 +1,3 @@
-// To calculate 
 function calculateBill() {
     let billInput = Number(document.getElementById("billTotalInput").value);
     let noOfPeople = Number(document.getElementById("numberOfPeople").value);
