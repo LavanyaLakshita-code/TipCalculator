@@ -54,11 +54,13 @@ function tip50() {
 
 function numOfPpl() {
     let noOfPeople = Number(document.getElementById("numberOfPeople").value);
+    // checkLength(noOfPeople)
     if (noOfPeople <= 0) {
         return;
     }
     calculateBill();
 }
+
 
 function resetAll() {
     document.getElementById("billTotalInput").value = "";
@@ -67,3 +69,25 @@ function resetAll() {
     document.getElementById("perPersonTotal").innerText = "$0.00";
     document.getElementById("tipInput").value = "";
 }
+
+// error
+// let ErrorMsg = document.getElementById('errNUmberOfPeo')
+// let noOfPeople = Number(document.getElementById("numberOfPeople").value);
+// function showError(input) {
+//     console.log("input",input);
+   
+// }
+
+// function showSuccess(input) {
+//     console.log("input",input);
+// }
+
+// function checkLength(digit) {
+//     if (digit == "" || digit <= 0) {
+//         showError(noOfPeople)
+//         ErrorMsg.innerText = "Can't be zero."
+//     } else {
+//         showSuccess(noOfPeople)
+//         ErrorMsg.innerText = "";
+//     }
+// }

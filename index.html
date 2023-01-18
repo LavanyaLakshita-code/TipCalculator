@@ -16,9 +16,10 @@
     <h3 class="m-b">Tip Calculator</h3>
     <div class="one">
         <div class="child1">
+
             <div class="m-b">
                 <Label>Bill</Label><br />
-                <input onkeyup="calculateBill()" type="text" placeholder="0.00" id="billTotalInput" />
+                <input onkeyup="calculateBill()" class="dollar" type="text" placeholder="0.00" id="billTotalInput" />
             </div>
             <div class="m-b">
                 <Label class="m-b">Select Tip%</Label>
@@ -33,7 +34,8 @@
             </div>
             <div>
                 <Label for="numberOfPeople">Number of People</Label><br />
-                <input onkeyup="numOfPpl()" type="text" id="numberOfPeople" value="1">
+                <input onkeyup="numOfPpl()" class="user" type="text" id="numberOfPeople" value="1">
+                <!-- <small id="errNUmberOfPeo"></small> -->
             </div>
         </div>
         <div class="child2">
@@ -50,7 +52,10 @@
             <button class="reset" onclick="resetAll()">RESET</button>
         </div>
     </div>
-    <p id="aboutme">Created By <span class="about">Lavanya Lakshita</span></p>
+
+    <footer>
+        <p id="aboutme">Created By <span class="about">Lavanya Lakshita</span></p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 
